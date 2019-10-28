@@ -20,6 +20,7 @@ function checkUrl(){
         $("#meta").remove(); // Description
         $("#menu-container").remove(); // Not sure :)
         $("ytd-video-primary-info-renderer").css({ 'border-bottom' : '0', 'padding': '8px 0 8px 0'}); // Border before comments
+        $("#columns.ytd-watch-flexy").css({'justify-content': 'left', '-webkit-justify-content': 'left'}); // Let title go all the way to the left
 
         // Optional: Date and views
         $("#info-text").remove()
