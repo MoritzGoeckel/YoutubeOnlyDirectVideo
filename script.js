@@ -1,5 +1,7 @@
 // Do not forget to enable jQuery
 
+// Enable jQuery
+
 function redirect(){
     window.location.replace("http://google.com"); // Redirect url for forbidden sites
 }
@@ -17,10 +19,13 @@ function checkUrl(){
         $("#masthead-container").remove(); // Search bar
         $("#meta").remove(); // Description
         $("#menu-container").remove(); // Not sure :)
-        $("ytd-video-primary-info-renderer").css({ 'border-bottom' : '0'}); // Border before comments
+        $("ytd-video-primary-info-renderer").css({ 'border-bottom' : '0', 'padding': '8px 0 8px 0'}); // Border before comments
 
         // Optional: Date and views
-        $("#info").remove()
+        $("#info-text").remove()
+        $(".super-title").remove(); // Hashtags
+
+        $("#primary").css({'margin-left': '12px'}); // Shift title left
     }
 }
 
