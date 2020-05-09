@@ -1,6 +1,4 @@
-// Do not forget to enable jQuery
-
-// Enable jQuery
+// Enable jQuery in the Options
 
 function redirect(){
     window.location.replace("http://google.com"); // Redirect url for forbidden sites
@@ -25,8 +23,10 @@ function checkUrl(){
         // Optional: Date and views
         $("#info-text").remove()
         $(".super-title").remove(); // Hashtags
-
+		$("#related").remove()
+		
         $("#primary").css({'margin-left': '12px'}); // Shift title left
+        $("#page-manager").css({'margin': '12px'})
     }
 }
 
