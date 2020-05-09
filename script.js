@@ -12,6 +12,10 @@ function checkUrl(){
         redirect(); // Only direct video links are allowed
     }
     else {
+    	$("body").css({'overflow-y': 'hidden', 'background': 'black'})
+	$("ytd-app").css({'background': 'black'})
+	    
+    	$(".title").css({'color': 'white'}) // Video title
         $("#comments").remove(); // Comments
         $("#secondary").remove(); // Suggestions
         $("#masthead-container").remove(); // Search bar
@@ -23,7 +27,7 @@ function checkUrl(){
         // Optional: Date and views
         $("#info-text").remove()
         $(".super-title").remove(); // Hashtags
-		$("#related").remove()
+	$("#related").remove() // Suggestions
 		
         $("#primary").css({'margin-left': '12px'}); // Shift title left
         $("#page-manager").css({'margin': '12px'})
